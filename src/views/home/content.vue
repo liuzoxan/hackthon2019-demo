@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div :class="$style.home">
     <section :class="$style.title">
       <img v-bind:src="logoUrl" />
       <p>
-        FEEL YOUR FEEL
+        Feel your feel
       </p>
     </section>
     <section :class="$style.container">
@@ -33,7 +33,7 @@ export default {
   name: 'Content',
   data() {
     return {
-      logoUrl: require('@/assets/logo.png'),
+      logoUrl: require('@/assets/logo_dark.png'),
       articleData: [
         {
           imgSrc: require('@/assets/home_block_reusable.jpg'),
@@ -58,14 +58,19 @@ export default {
 
 <style lang="less" module>
 @import (reference) '../../style/common.less';
+.home {
+  background-color: #00011f;
+}
+
 .title {
   width: 990px;
   padding-top: 100px;
   margin: 0 auto;
-  box-shadow: inset 0 100px 100px -100px rgba(255, 255, 255, 0.4);
+
   p {
-    font-size: 30px;
-    color: #2c7cb4;
+    color: #33b43e;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
     font-weight: bold;
   }
   img {

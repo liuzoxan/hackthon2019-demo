@@ -7,6 +7,7 @@
 
 <script>
 import HeaderLayout from './views/header'
+import './style/font/iconfont.css'
 export default {
   name: 'app',
   components: {
