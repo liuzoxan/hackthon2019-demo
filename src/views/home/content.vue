@@ -1,9 +1,9 @@
 <template>
   <div>
     <section :class="$style.title">
+      <img v-bind:src="logoUrl" />
       <p>
-        SPOTMAX HELP YOU MAXIMIZE THE COST SAVING WITHOUT COMPROMISING ON THE
-        AVAILABILITY BY LEVERAGING HIGHLY ELASTIC RESOURCES IN CLOUD.
+        FEEL YOUR FEEL
       </p>
     </section>
     <section :class="$style.container">
@@ -33,6 +33,7 @@ export default {
   name: 'Content',
   data() {
     return {
+      logoUrl: require('@/assets/logo.png'),
       articleData: [
         {
           imgSrc: require('@/assets/home_block_reusable.jpg'),
@@ -58,13 +59,19 @@ export default {
 <style lang="less" module>
 @import (reference) '../../style/common.less';
 .title {
-  width: 100%;
-  padding-top: 70px;
-  box-shadow: inset 0 100px 100px -100px rgba(0, 0, 0, 0.4);
+  width: 990px;
+  padding-top: 100px;
+  margin: 0 auto;
+  box-shadow: inset 0 100px 100px -100px rgba(255, 255, 255, 0.4);
   p {
-    font-size: 18px;
-    color: #3a3a3a;
+    font-size: 30px;
+    color: #2c7cb4;
     font-weight: bold;
+  }
+  img {
+    width: 420px;
+    /*height: 70px;*/
+    outline: none;
   }
 }
 
