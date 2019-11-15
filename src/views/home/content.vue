@@ -18,7 +18,6 @@
             <router-link :to="item.link" class="textStyle">
               {{ item.text }}
             </router-link>
-            <router-link :to="item.link" class="link">体验</router-link>
           </li>
         </ul>
       </section>
