@@ -8,19 +8,21 @@
         ><span class="slogan3">有趣.</span>
       </h1>
     </section>
-    <section class="container">
-      <ul class="ulStyle">
-        <li v-for="(item, index) in articleData" :key="index" class="liStyle">
-          <div class="picture">
-            <img :src="item.imgSrc" />
-          </div>
-          <router-link :to="item.link" class="textStyle">
-            {{ item.text }}
-          </router-link>
-          <router-link :to="item.link" class="link">体验</router-link>
-        </li>
-      </ul>
-    </section>
+    <div class="wrapper">
+      <section class="container">
+        <ul class="ulStyle">
+          <li v-for="(item, index) in articleData" :key="index" class="liStyle">
+            <div class="picture">
+              <img :src="item.imgSrc" />
+            </div>
+            <router-link :to="item.link" class="textStyle">
+              {{ item.text }}
+            </router-link>
+            <router-link :to="item.link" class="link">体验</router-link>
+          </li>
+        </ul>
+      </section>
+    </div>
   </div>
 </template>
 
