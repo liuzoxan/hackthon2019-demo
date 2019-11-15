@@ -1,11 +1,11 @@
 <template>
   <header :class="headerStyle.headerStyle">
-    <!--    <div :class="headerStyle.leftStyle">-->
-    <!--      <router-link-->
-    <!--        :to="{ name: 'Main' }"-->
-    <!--        :class="headerStyle.logo"-->
-    <!--      ></router-link>-->
-    <!--    </div>-->
+    <div :class="headerStyle.leftStyle">
+      <router-link
+        :to="{ name: 'Main' }"
+        :class="headerStyle.logo"
+      ></router-link>
+    </div>
   </header>
 </template>
 

@@ -1,18 +1,11 @@
 <template>
   <section :class="templateStyle.content">
-    <div :class="templateStyle.leftStyle">
-      <!--      <p :class="templateStyle.date">JUNE 10, 2016</p>-->
-      <p :class="templateStyle.title">
-        MAXCHAOS: IMPROVES RESILIENCE AND AVAILABILITY CONTINUOUSLY
-      </p>
-    </div>
     <div :class="templateStyle.rightStyle">
       <p>
-        improves the system’s resilience and availability continuously, which
-        includes chaos engineering best practices and chaos engineering tools.
+        神奇警察
       </p>
       <p>
-        <img :src="require('@/assets/home_block_commercial_crew.jpg')" />
+        <img :src="require('@/assets/policeman.jpg')" />
       </p>
     </div>
   </section>

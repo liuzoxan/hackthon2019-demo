@@ -1,18 +1,14 @@
 <template>
   <div id="app">
-    <header-layout></header-layout>
     <router-view />
   </div>
 </template>
 
 <script>
-import HeaderLayout from './views/header'
 import './style/font/iconfont.css'
 export default {
   name: 'app',
-  components: {
-    HeaderLayout
-  }
+  components: {}
 }
 </script>
 

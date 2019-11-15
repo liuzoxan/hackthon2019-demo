@@ -1,0 +1,30 @@
+@import (reference) '../../style/common.less';
+
+.headerStyle {
+  position: relative;
+  padding: 0 5%;
+  background: #00011f;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
+  align-items: center;
+  //z-index: 12;
+}
+
+.leftStyle,
+.rightStyle {
+  position: relative;
+  //width: 64%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  .logo {
+    width: 200px;
+    height: 90px;
+    background: url('../../assets/logo_dark.png') no-repeat center left;
+    .background-size(100%, auto);
+    outline:none;
+  }
+}

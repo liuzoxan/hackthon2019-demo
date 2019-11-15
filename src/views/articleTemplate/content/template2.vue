@@ -1,19 +1,11 @@
 <template>
   <section :class="templateStyle.content">
-    <div :class="templateStyle.leftStyle">
-      <p :class="templateStyle.title">
-        MAXGROUP: MAXIMIZE COST SAVING BY ELASTIC RESOURCES
-      </p>
-    </div>
     <div :class="templateStyle.rightStyle">
       <p>
-        optimizes the host clusters according to the service’s work modes and
-        runtime characteristics to maximize cost saving and minimize the impacts
-        brought by the fluctuations of elastic resources (e.g. spot instance
-        interruption).
+        互动广告
       </p>
       <p>
-        <img :src="require('@/assets/home_block_commercial_crew.jpg')" />
+        <img :src="require('@/assets/advertising.jpg')" />
       </p>
     </div>
   </section>
