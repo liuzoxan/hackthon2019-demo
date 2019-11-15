@@ -1,41 +1,15 @@
+@import (reference) '../../../style/common.less';
+
 .content {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  .leftStyle {
-    position: relative;
-    width: 40%;
-
-    .date {
-      font-size: 14px;
-      color: #999;
-      text-align: left;
-    }
-
-    .title {
-      margin-right: 48px;
-      font-size: 25px;
-      color: #3a3a3a;
-      text-align: left;
-      font-weight: bold;
-      word-wrap: break-word;
-      word-break: break-all;
-    }
-  }
+  width: 80%;
+  margin: 0 auto;
 
   .rightStyle {
-    position: center;
-    width: 60%;
-
     p {
       font-size: 50px;
       margin: 20px 0;
       width: 100%;
-      text-align: left;
+      text-align: center;
       font-weight: bold;
       color: #4b5256;
 
@@ -43,11 +17,10 @@
         color: #222222;
         font-size: 16px;
       }
+    }
 
-      img {
-        width: 100%;
-        vertical-align: middle;
-      }
+    img {
+      width: 50%;
     }
   }
 }

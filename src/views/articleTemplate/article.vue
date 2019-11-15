@@ -1,7 +1,7 @@
 <template>
   <div>
     <header-layout></header-layout>
-    <div class="main">
+    <div>
       <router-view />
     </div>
   </div>
@@ -9,7 +9,6 @@
 
 <script>
 import HeaderLayout from './header'
-import './article.less'
 
 export default {
   name: 'Article',
