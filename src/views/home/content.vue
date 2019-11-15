@@ -2,7 +2,7 @@
   <div class="home">
     <section class="title">
       <img v-bind:src="logoUrl" />
-      <p>" Feel your feeling. "</p>
+      <p>" Feel your feeling "</p>
       <h1>
         <span class="slogan1">真实.</span><span class="slogan2">互动.</span
         ><span class="slogan3">有趣.</span>
