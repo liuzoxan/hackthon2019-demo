@@ -1,7 +1,6 @@
 <template>
   <div>
     <header-layout></header-layout>
-    <section class="shadowbox"></section>
     <div class="main">
       <router-view />
     </div>
