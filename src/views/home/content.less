@@ -1,0 +1,130 @@
+@import (reference) '../../style/common.less';
+.home {
+  background-color: #00011f;
+}
+
+.title {
+  width: 990px;
+  padding-top: 100px;
+  margin: 0 auto;
+
+  p {
+    color: #ffffff;
+    font-family: 'Chalkboard', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  img {
+    width: 420px;
+    /*height: 70px;*/
+    outline: none;
+  }
+}
+
+.slogan1 {
+  color: #34a574;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+.slogan2 {
+  color: #375c93;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+.slogan3 {
+  color: #8dc63f;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container {
+  width: 990px;
+  padding: 30px 0 120px;
+  margin: 0 auto;
+
+  .ulStyle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .liStyle {
+    width: 262px;
+    height: 234px;
+    padding: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .liStyle:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+
+  .picture {
+    position: relative;
+    width: 100%;
+    height: 116px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  .textStyle {
+    position: relative;
+    width: 100%;
+    height: 75px;
+    color: #3a3a3a;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    outline: none;
+  }
+
+  .textStyle:hover {
+    text-decoration: underline;
+    outline: none;
+  }
+
+  .link {
+    font-size: 12px;
+    color: #3569a4;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    text-decoration: none;
+
+    &::after {
+      content: '→';
+      color: #3a3a3a;
+      margin-left: 5px;
+    }
+  }
+
+  .link:hover {
+    border-bottom: 2px solid #3569a4;
+  }
+}
+.container:hover {
+
+}

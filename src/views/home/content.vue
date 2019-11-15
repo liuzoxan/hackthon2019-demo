@@ -1,27 +1,23 @@
 <template>
-  <div :class="$style.home">
-    <section :class="$style.title">
+  <div class="home">
+    <section class="title">
       <img v-bind:src="logoUrl" />
-      <p>
-        Feel your feel
-      </p>
+      <p>" Feel your feeling. "</p>
+      <h1>
+        <span class="slogan1">真实.</span><span class="slogan2">互动.</span
+        ><span class="slogan3">有趣.</span>
+      </h1>
     </section>
-    <section :class="$style.container">
-      <ul :class="$style.ulStyle">
-        <li
-          v-for="(item, index) in articleData"
-          :key="index"
-          :class="$style.liStyle"
-        >
-          <div :class="$style.picture">
+    <section class="container">
+      <ul class="ulStyle">
+        <li v-for="(item, index) in articleData" :key="index" class="liStyle">
+          <div class="picture">
             <img :src="item.imgSrc" />
           </div>
-          <router-link :to="item.link" :class="$style.textStyle">
+          <router-link :to="item.link" class="textStyle">
             {{ item.text }}
           </router-link>
-          <router-link :to="item.link" :class="$style.link"
-            >LEARN MORE</router-link
-          >
+          <router-link :to="item.link" class="link">体验</router-link>
         </li>
       </ul>
     </section>
@@ -29,6 +25,7 @@
 </template>
 
 <script>
+import './content.less'
 export default {
   name: 'Content',
   data() {
@@ -36,18 +33,18 @@ export default {
       logoUrl: require('@/assets/logo_dark.png'),
       articleData: [
         {
-          imgSrc: require('@/assets/home_block_reusable.jpg'),
-          text: 'MAXARCH: MAKES A HIGH AVAILABLE ARCHITECTURE',
+          imgSrc: require('@/assets/movie.png'),
+          text: 'Autopilot电影：有趣的情感互动电影，体验属于你自己的电影',
           link: { name: 'Template1' }
         },
         {
-          imgSrc: require('@/assets/home_block_commercial_crew.jpg'),
-          text: 'MAXGROUP: MAXIMIZE COST SAVING BY ELASTIC RESOURCES',
+          imgSrc: require('@/assets/advertising.jpg'),
+          text: '互动广告：立体情景追踪，陪伴你的信息小管家',
           link: { name: 'Template2' }
         },
         {
-          imgSrc: require('@/assets/multiplanetary_thumbnail.jpg'),
-          text: 'MAXCHAOS: IMPROVES RESILIENCE AND AVAILABILITY CONTINUOUSLY',
+          imgSrc: require('@/assets/policeman.jpg'),
+          text: '神奇警察：可疑敲门人，家庭安保员',
           link: { name: 'Template3' }
         }
       ]
@@ -55,109 +52,3 @@ export default {
   }
 }
 </script>
-
-<style lang="less" module>
-@import (reference) '../../style/common.less';
-.home {
-  background-color: #00011f;
-}
-
-.title {
-  width: 990px;
-  padding-top: 100px;
-  margin: 0 auto;
-
-  p {
-    color: #33b43e;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-  }
-  img {
-    width: 420px;
-    /*height: 70px;*/
-    outline: none;
-  }
-}
-
-.container {
-  width: 990px;
-  padding: 80px 0 120px;
-  margin: 0 auto;
-
-  .ulStyle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .liStyle {
-    width: 262px;
-    height: 234px;
-    padding: 24px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    text-align: left;
-  }
-
-  .liStyle:nth-child(3n + 3) {
-    margin-right: 0px;
-  }
-
-  .picture {
-    position: relative;
-    width: 100%;
-    height: 116px;
-    overflow: hidden;
-    margin-bottom: 20px;
-
-    img {
-      width: 100%;
-      vertical-align: middle;
-    }
-  }
-
-  .textStyle {
-    position: relative;
-    width: 100%;
-    height: 75px;
-    color: #3a3a3a;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: left;
-    display: block;
-    text-decoration: none;
-    overflow: hidden;
-    margin-bottom: 10px;
-    outline: none;
-  }
-
-  .textStyle:hover {
-    text-decoration: underline;
-    outline: none;
-  }
-
-  .link {
-    font-size: 12px;
-    color: #3569a4;
-    width: 100%;
-    height: 20px;
-    line-height: 20px;
-    text-align: left;
-    text-decoration: none;
-
-    &::after {
-      content: '→';
-      color: #3a3a3a;
-      margin-left: 5px;
-    }
-  }
-
-  .link:hover {
-    border-bottom: 2px solid #3569a4;
-  }
-}
-</style>
